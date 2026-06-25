@@ -9,10 +9,10 @@ const projects = [
     category: "Residential Architecture",
     filter: "residential",
     location: "Jagatpura, Jaipur",
-    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=82",
+    image: "images/unnamed.webp",
     gallery: [
-      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=82",
-      "https://images.unsplash.com/photo-1600607687930-4e2a09cf159d?auto=format&fit=crop&w=1200&q=82"
+      "images/unnamed (1).webp",
+      "images/unnamed (2).webp"
     ],
     summary: "A modern luxury home featuring double-height volumes, native Jodhpur stone facades, and integrated interior courtyards that facilitate natural ventilation.",
     scope: "Conceptual architectural design, elevation planning, space layouts, structural coordination, and landscaping integration",
@@ -24,10 +24,10 @@ const projects = [
     category: "Commercial Architecture",
     filter: "commercial",
     location: "Malviya Nagar, Jaipur",
-    image: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=82",
+    image: "images/unnamed (1).webp",
     gallery: [
-      "https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=1200&q=82",
-      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=82"
+      "images/unnamed (3).webp",
+      "images/unnamed (4).webp"
     ],
     summary: "A striking, high-performance commercial workspace designed with steel-framing, low-E glazing, and modular open-plan layouts for modern business teams.",
     scope: "Commercial zoning, structural planning, facade design, interior architecture, and services integration",
@@ -39,10 +39,10 @@ const projects = [
     category: "Interior Architecture",
     filter: "interior",
     location: "Mansarovar, Jaipur",
-    image: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1200&q=82",
+    image: "images/unnamed (2).webp",
     gallery: [
-      "https://images.unsplash.com/photo-1618219908412-a29a1bb7b86e?auto=format&fit=crop&w=1200&q=82",
-      "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1200&q=82"
+      "images/unnamed (5).webp",
+      "images/unnamed.webp"
     ],
     summary: "A premium duplex residential interior with customized teak woodwork, hidden structural modifications, and ambient light tracks for a polished finish.",
     scope: "Space planning, interior elevations, detailed joinery design, material selection, and lighting consulting",
@@ -54,10 +54,10 @@ const projects = [
     category: "Landscape & Villa Design",
     filter: "landscape",
     location: "Sirsi Road, Jaipur",
-    image: "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=1200&q=82",
+    image: "images/unnamed (3).webp",
     gallery: [
-      "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=1200&q=82",
-      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=82"
+      "images/unnamed (2).webp",
+      "images/unnamed (1).webp"
     ],
     summary: "A weekend farmhouse integrating regional architecture with expansive landscaping, zero-edge pool decks, and shaded pavilions for outdoor living.",
     scope: "Master planning, villa architecture, landscape design, electrical and plumbing layout, and site execution oversight",
@@ -69,10 +69,10 @@ const projects = [
     category: "Residential Architecture",
     filter: "residential",
     location: "C-Scheme, Jaipur",
-    image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1200&q=82",
+    image: "images/unnamed (4).webp",
     gallery: [
-      "https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1200&q=82",
-      "https://images.unsplash.com/photo-1600607687930-4e2a09cf159d?auto=format&fit=crop&w=1200&q=82"
+      "images/unnamed (5).webp",
+      "images/unnamed.webp"
     ],
     summary: "A contemporary residence designed on a narrow urban plot, utilizing a terracotta jali screen facade to filter sunlight, maintain privacy, and permit airflow.",
     scope: "Urban site planning, facade engineering, interior layouts, customized metal fabrication, and construction drawings",
@@ -84,10 +84,10 @@ const projects = [
     category: "Commercial Architecture",
     filter: "commercial",
     location: "Tonk Road, Jaipur",
-    image: "https://images.unsplash.com/photo-1600607688969-a5bfcd646154?auto=format&fit=crop&w=1200&q=82",
+    image: "images/unnamed (5).webp",
     gallery: [
-      "https://images.unsplash.com/photo-1600566752355-35792bedcfea?auto=format&fit=crop&w=1200&q=82",
-      "https://images.unsplash.com/photo-1600607688969-a5bfcd646154?auto=format&fit=crop&w=1200&q=82"
+      "images/unnamed (3).webp",
+      "images/unnamed (4).webp"
     ],
     summary: "A premium display store designed with fair-faced concrete panels, sweeping curves, and minimalist product niches to create a gallery-like retail experience.",
     scope: "Retail space design, lighting planning, interior partitions, material selection, and execution supervision",
@@ -154,6 +154,14 @@ function qs(selector, scope = document) {
 
 function qsa(selector, scope = document) {
   return [...scope.querySelectorAll(selector)];
+}
+
+// Map the logo image if it exists in the brand elements
+function initLogo() {
+  qsa(".brand-mark").forEach((el) => {
+    el.style.border = "none";
+    el.innerHTML = `<img src="images/Logo.png" alt="AD Logo" style="width: 100%; height: 100%; object-fit: contain; border-radius: 50%;">`;
+  });
 }
 
 function initHeader() {
@@ -313,6 +321,7 @@ function initProjectDetail() {
     </section>
   `;
   initReveal();
+  initLogo();
 }
 
 function initReviews() {
@@ -377,6 +386,7 @@ function hydrateContactLinks() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
+  initLogo();
   initHeader();
   initReveal();
   initCounters();
