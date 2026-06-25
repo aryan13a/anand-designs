@@ -9,10 +9,10 @@ const projects = [
     category: "Residential Architecture",
     filter: "residential",
     location: "Jagatpura, Jaipur",
-    image: "images/unnamed.webp",
+    image: "images/unnamed (1).webp",
     gallery: [
-      "images/unnamed (1).webp",
-      "images/unnamed (2).webp"
+      "images/unnamed (2).webp",
+      "images/unnamed (3).webp"
     ],
     summary: "A modern luxury home featuring double-height volumes, native Jodhpur stone facades, and integrated interior courtyards that facilitate natural ventilation.",
     scope: "Conceptual architectural design, elevation planning, space layouts, structural coordination, and landscaping integration",
@@ -24,7 +24,7 @@ const projects = [
     category: "Commercial Architecture",
     filter: "commercial",
     location: "Malviya Nagar, Jaipur",
-    image: "images/unnamed (1).webp",
+    image: "images/unnamed (2).webp",
     gallery: [
       "images/unnamed (3).webp",
       "images/unnamed (4).webp"
@@ -39,10 +39,10 @@ const projects = [
     category: "Interior Architecture",
     filter: "interior",
     location: "Mansarovar, Jaipur",
-    image: "images/unnamed (2).webp",
+    image: "images/unnamed (3).webp",
     gallery: [
       "images/unnamed (5).webp",
-      "images/unnamed.webp"
+      "images/unnamed (1).webp"
     ],
     summary: "A premium duplex residential interior with customized teak woodwork, hidden structural modifications, and ambient light tracks for a polished finish.",
     scope: "Space planning, interior elevations, detailed joinery design, material selection, and lighting consulting",
@@ -54,10 +54,10 @@ const projects = [
     category: "Landscape & Villa Design",
     filter: "landscape",
     location: "Sirsi Road, Jaipur",
-    image: "images/unnamed (3).webp",
+    image: "images/unnamed (4).webp",
     gallery: [
       "images/unnamed (2).webp",
-      "images/unnamed (1).webp"
+      "images/unnamed (5).webp"
     ],
     summary: "A weekend farmhouse integrating regional architecture with expansive landscaping, zero-edge pool decks, and shaded pavilions for outdoor living.",
     scope: "Master planning, villa architecture, landscape design, electrical and plumbing layout, and site execution oversight",
@@ -69,10 +69,10 @@ const projects = [
     category: "Residential Architecture",
     filter: "residential",
     location: "C-Scheme, Jaipur",
-    image: "images/unnamed (4).webp",
+    image: "images/unnamed (5).webp",
     gallery: [
-      "images/unnamed (5).webp",
-      "images/unnamed.webp"
+      "images/unnamed (1).webp",
+      "images/unnamed (2).webp"
     ],
     summary: "A contemporary residence designed on a narrow urban plot, utilizing a terracotta jali screen facade to filter sunlight, maintain privacy, and permit airflow.",
     scope: "Urban site planning, facade engineering, interior layouts, customized metal fabrication, and construction drawings",
@@ -84,7 +84,7 @@ const projects = [
     category: "Commercial Architecture",
     filter: "commercial",
     location: "Tonk Road, Jaipur",
-    image: "images/unnamed (5).webp",
+    image: "images/unnamed (2).webp",
     gallery: [
       "images/unnamed (3).webp",
       "images/unnamed (4).webp"
